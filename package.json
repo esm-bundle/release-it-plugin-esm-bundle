@@ -1,0 +1,19 @@
+{
+  "name": "release-it-plugin-esm-bundle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esm-bundle/release-it-plugin-esm-bundle.git"
+  },
+  "author": "Joel Denning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esm-bundle/release-it-plugin-esm-bundle/issues"
+  },
+  "homepage": "https://github.com/esm-bundle/release-it-plugin-esm-bundle#readme"
+}
