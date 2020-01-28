@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/esm-bundle/release-it-plugin-esm-bundle/issues"
   },
-  "homepage": "https://github.com/esm-bundle/release-it-plugin-esm-bundle#readme"
+  "homepage": "https://github.com/esm-bundle/release-it-plugin-esm-bundle#readme",
+  "dependencies": {}
 }
