@@ -29,7 +29,7 @@ function getDepName() {
 
 function getDepVersion() {
   const depName = getDepName()
-  const dependency = (packageJson.dependencies || {})[depName]
+  const dependency = (packageJson.devDependencies || {})[depName]
   if (!dependency) {
     throw Error(`Missing package.json dependency '${depName}'`)
   }
