@@ -8,6 +8,7 @@ module.exports = class CustomVersion extends Plugin {
     const currentPackageVersion = packageJson.version
 
     if (currentPackageVersion.startsWith(depVersion)) {
+      console.info("Disabling release-it because this version is already published")
       return ['git', 'github', 'npm', 'version']
     } else {
       return []
