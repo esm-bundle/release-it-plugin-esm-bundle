@@ -1,8 +1,12 @@
-const path = require("path");
-const Plugin = require("release-it/lib/plugin/Plugin.js");
-const packageJson = require(path.join(process.cwd(), "./package.json"));
+import fs from "node:fs";
+import path from "node:path";
+import { Plugin } from "release-it";
 
-module.exports = class CustomVersion extends Plugin {
+const packageJson = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), "./package.json")).toString()
+);
+
+export default class CustomVersion extends Plugin {
   static disablePlugin() {
     const depVersion = getDepVersion();
     const currentPackageVersion = packageJson.version;
@@ -19,7 +23,7 @@ module.exports = class CustomVersion extends Plugin {
   getIncrementedVersionCI() {
     return getDepVersion();
   }
-};
+}
 
 function getDepName() {
   if (!packageJson.name) {
